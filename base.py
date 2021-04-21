@@ -27,7 +27,7 @@ class BaseTrack(BaseSingleAgentAviary):
                  ):
         self.ring_index = 0
         self.rings = [[2, 1, 1.25], [5, 3, 1.25], [4, 6, 1.25], [1, 7, 1.25], [-1, 5, 1.25], [-3, 3, 1.25], [-1, 1, 1.25]]
-        self.rings_yaw = [0.349066, 0.785398, -0.349066, 0, 0.349066, 1.5708, 0]
+        self.rings_yaw = [0.349066, 0.785398, -0.35066, 0, 0.523599, 1.5708, 0]
         """Initialization of a single agent RL environment.
 
         Using the generic single agent RL superclass.
