@@ -182,7 +182,7 @@ anything available. Note: These are all attributes or instance variables of the 
   * `[13:16]` contains `(3,)`-shaped array of the [x_angular_velocity, y_angular_velocity, z_angular_velocity]
   * `[16:20]` contains `(4,)`-shaped array of the last clipped action taken
 * `self.ring_index`: defaults to 0, variable for you to keep track of the current ring the drone has flown through, you must update this when necessary.
-* `self.rings`: Coordinates of all the rings in the map,`[[2, 1, 1],[5, 3, 1],[4, 6, 1],[1, 7, 1],[-1, 5, 1],[-3, 3, 1], [-1, 1, 1]]`
+* `self.rings`: Coordinates of all the rings in the map,`[[2, 1, 1.25], [5, 3, 1.25], [4, 6, 1.25], [1, 7, 1.25], [-1, 5, 1.25], [-3, 3, 1.25], [-1, 1, 1.25]]`
 
 Feel free to use any or all of this information in any of your code. 
 

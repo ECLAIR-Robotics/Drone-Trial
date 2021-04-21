@@ -26,7 +26,8 @@ class BaseTrack(BaseSingleAgentAviary):
                  EPISODE_LEN_SEC:int=120
                  ):
         self.ring_index = 0
-        self.rings = [[2, 1, 1],[5, 3, 1],[4, 6, 1],[1, 7, 1],[-1, 5, 1],[-3, 3, 1], [-1, 1, 1]]
+        self.rings = [[2, 1, 1.25], [5, 3, 1.25], [4, 6, 1.25], [1, 7, 1.25], [-1, 5, 1.25], [-3, 3, 1.25], [-1, 1, 1.25]]
+        self.rings_yaw = [0.349066, 0.785398, -0.349066, 0, 0.349066, 1.5708, 0]
         """Initialization of a single agent RL environment.
 
         Using the generic single agent RL superclass.
@@ -78,8 +79,9 @@ class BaseTrack(BaseSingleAgentAviary):
         ADD DESIGN TEAMS OBJECTS
         # """
         #p.loadURDF("Epic_BLender_Files/urdf/modeltest1NEW.urdf", [0, 0, 0], p.getQuaternionFromEuler([0, 0, 0]), physicsClientId=self.CLIENT)
-        for coords in self.rings:
-            p.loadURDF("Epic_BLender_Files/urdf/ringNEW.urdf", coords, p.getQuaternionFromEuler([0, 0, 0]), physicsClientId=self.CLIENT)
+        for i in range(len(self.rings)):
+            coords = self.rings[i]
+            p.loadURDF("Epic_BLender_Files/urdf/ringNEW.urdf", coords, p.getQuaternionFromEuler([0, 1.5708, self.rings_yaw[i]]), physicsClientId=self.CLIENT)
 
     ################################################################################
 
