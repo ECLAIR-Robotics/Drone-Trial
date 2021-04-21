@@ -1,0 +1,5 @@
+logs/
+to_unix.py
+*.zip
+.idea/
+__pycache__/

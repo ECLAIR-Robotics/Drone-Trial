@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="unnamed">
+
+    <link name="D">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="Apple">
+        <origin xyz="-0.60168 -0.72072 0.26549" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.51623 0.5428 0.54709"/>
+        </geometry>
+        <material name="Apples"/>
+      </visual>
+      <visual name="Apple2">
+        <origin xyz="0.78993 -1.03571 0.2784" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.51623 0.5428 0.54709"/>
+        </geometry>
+        <material name="Apples"/>
+      </visual>
+      <visual name="Apple3">
+        <origin xyz="-0.54497 -0.01431 0.27625" rpy="0 0 -2.7357"/>
+        <geometry>
+          <box size="0.51623 0.5428 0.54709"/>
+        </geometry>
+        <material name="Apples"/>
+      </visual>
+      <visual name="Big Tree">
+        <origin xyz="0.08515 -0.69393 0.19465" rpy="0 0 1.90972"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cylinder.005.dae" scale="0.16942 0.16942 0.16942"/>
+        </geometry>
+        <material name="Material.013"/>
+      </visual>
+      <visual name="Cube">
+        <origin xyz="0.02449 0.00025 0.03172" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cube.001.dae" scale="0.119 0.119 0.01244"/>
+        </geometry>
+        <material name="Material.001"/>
+      </visual>
+      <visual name="Flag Pole">
+        <origin xyz="-0.73622 -3.36644 0.22896" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cylinder.dae" scale="0.00652 0.00652 0.26092"/>
+        </geometry>
+        <material name="Material.003"/>
+      </visual>
+      <visual name="Grass">
+        <origin xyz="0.02449 -1.73482 -0.15137" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cube.006.dae" scale="25.58492 22.68643 0.15866"/>
+        </geometry>
+        <material name="Material.015"/>
+      </visual>
+      <visual name="Hills">
+        <origin xyz="0.02449 -1.73482 -0.15137" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Plane.002.dae" scale="8.18262 8.18262 8.18262"/>
+        </geometry>
+        <material name="Material.016"/>
+      </visual>
+      <visual name="Icosphere">
+        <origin xyz="-0.95211 -1.40743 0.49285" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Icosphere.001.dae" scale="0.17457 0.17457 0.17457"/>
+        </geometry>
+        <material name="Material.005"/>
+      </visual>
+      <visual name="Icosphere.001">
+        <origin xyz="-1.72954 -1.15293 0.46944" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Icosphere.002.dae" scale="0.17457 0.17457 0.17457"/>
+        </geometry>
+        <material name="Material.012"/>
+      </visual>
+      <visual name="Icosphere.002">
+        <origin xyz="-0.29969 -0.1999 2.51158" rpy="0 0 1.90972"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Icosphere.003.dae" scale="0.84161 0.84161 0.84161"/>
+        </geometry>
+        <material name="Material.014"/>
+      </visual>
+      <visual name="Mountains">
+        <origin xyz="0.02449 -1.73482 -0.15137" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Plane.001.dae" scale="18.93395 18.93395 18.93395"/>
+        </geometry>
+        <material name="Material.002"/>
+      </visual>
+      <visual name="Plane">
+        <origin xyz="-0.73622 -3.18705 0.37573" rpy="-3.14159 -1.5708 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Plane.dae" scale="0.04892 0.17938 0.03262"/>
+        </geometry>
+        <material name="Material.flag.001"/>
+      </visual>
+      <visual name="Stem">
+        <origin xyz="-0.60531 -0.72989 0.29273" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.04394 0.04639 0.41547"/>
+        </geometry>
+      </visual>
+      <visual name="Stem2">
+        <origin xyz="0.78631 -1.04488 0.30564" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.04394 0.04639 0.41547"/>
+        </geometry>
+      </visual>
+      <visual name="Stem3">
+        <origin xyz="-0.54526 -0.00446 0.30349" rpy="0 0 -2.7357"/>
+        <geometry>
+          <box size="0.04394 0.04639 0.41547"/>
+        </geometry>
+      </visual>
+      <visual name="Torus.001">
+        <origin xyz="-0.98628 -2.8753 0.16704" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.001.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.002">
+        <origin xyz="0.58319 -2.62583 0.12791" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.002.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.003">
+        <origin xyz="-0.2096 -1.66568 0.16223" rpy="1.5708 0 -0.75334"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.003.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.004">
+        <origin xyz="1.69706 -0.99747 0.15597" rpy="1.5708 0 -0.75334"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.004.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.005">
+        <origin xyz="-2.35299 -1.02638 0.17049" rpy="1.5708 0 -1.48943"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.005.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.006">
+        <origin xyz="-0.55668 -0.31027 0.15361" rpy="1.5708 0 -1.11838"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.006.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.007">
+        <origin xyz="-1.18808 0.5907 0.18224" rpy="1.5708 0 -1.48943"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.007.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.008">
+        <origin xyz="-2.14964 0.344 0.20077" rpy="1.5708 0 -1.48943"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.008.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.009">
+        <origin xyz="-3.06575 -0.34612 0.12243" rpy="1.5708 0 2.97589"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.009.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.010">
+        <origin xyz="1.49443 -0.04275 0.16985" rpy="1.5708 0 -1.93577"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.010.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Torus.011">
+        <origin xyz="-0.08394 -3.58116 0.15645" rpy="1.5708 0 -1.71827"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.011.dae" scale="0.25847 0.25847 0.25847"/>
+        </geometry>
+        <material name="rings"/>
+      </visual>
+      <visual name="Tree1">
+        <origin xyz="-1.07529 -1.44865 0.01226" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cylinder.000.dae" scale="0.03514 0.03514 0.03514"/>
+        </geometry>
+        <material name="Material.006"/>
+      </visual>
+      <visual name="Tree2">
+        <origin xyz="-1.85272 -1.19415 -0.01114" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Cylinder.004.dae" scale="0.03514 0.03514 0.03514"/>
+        </geometry>
+        <material name="Material.011"/>
+      </visual>
+    </link>
+
+    <material name="Apples">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.001">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.002">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.003">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.005">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.006">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.011">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.012">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.013">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.014">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.015">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.016">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="Material.flag.001">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+    <material name="rings">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+  </robot>

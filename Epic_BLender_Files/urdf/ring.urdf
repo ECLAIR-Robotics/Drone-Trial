@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="ring">
+
+    <link name="new_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="10.0"/>
+        <inertia ixx="3.78202" ixy="0" ixz="0" iyy="3.78202" iyz="0" izz="7.31467"/>
+      </inertial>
+      <visual name="Torus">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Material.001"/>
+      </visual>
+      <collision name="Torus">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="..\meshes\dae\Torus.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <material name="Material.001">
+      <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+  </robot>
