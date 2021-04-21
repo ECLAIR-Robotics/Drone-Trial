@@ -4,12 +4,29 @@
 * [`gym-pubullet-drones`](https://github.com/utiasDSL/gym-pybullet-drones)
     * Major dependencies are [`gym`](https://gym.openai.com/docs/),  [`pybullet`](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#)
     
-## Installation
+## Envrionment Installation
+
+Assumes you have Anaconda installed for environment, but can use any virtual environment
+```
+conda create -n droneEnv python=3.8
+conda activate droneEnv
+pip3 install --upgrade numpy Pillow matplotlib cycler 
+pip3 install --upgrade gym pybullet stable_baselines3 'ray[rllib]'
+```
+Video recording requires to have [`ffmpeg`](https://ffmpeg.org) installed, on *macOS*
+```
+$ brew install ffmpeg
+```
+On *Ubuntu*
+```
+$ sudo apt install ffmpeg
+```
+Video recordings not compatible with *Windows* yet
 
 
 ## Overview
 Implement a drone agent that can complete the TrackV1 map course. Specifically you must: 
-* Choose in observation and action type, elaborated below.
+* Choose an observation and action type, elaborated below.
 * Define the reward for your drone agent in `track.py` via the `_computeReward` function, an example implementation has been left in there, however this will not work to achieve completion of the track.
 * Implement a proper action in `train.py`, you may add any necessary files and use any algorithms to achieve this. 
 * Train your agent!
